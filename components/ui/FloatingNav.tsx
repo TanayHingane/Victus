@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -27,7 +27,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(true);
@@ -60,25 +60,24 @@ export const FloatingNav = ({
           className
         )}
         style={{
-            backdropFilter: "blur(16px) saturate(180%)",
-            backgroundColor: "rgba(17, 25, 40, 0.75)",
-            borderRadius: "12px",
-            border: "1px solid rgba(255, 255, 255, 0.125)",
-          }}
+          backdropFilter: "blur(16px) saturate(180%)",
+          backgroundColor: "rgba(17, 25, 40, 0.75)",
+          borderRadius: "12px",
+          border: "1px solid rgba(255, 255, 255, 0.125)",
+        }}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative items-center flex space-x-1 text-neutral-200 hover:text-white transition-all duration-300"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="!cursor-pointer text-sm">{navItem.name}</span>
           </Link>
         ))}
-        
       </motion.div>
     </AnimatePresence>
   );

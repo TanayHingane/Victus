@@ -1,12 +1,31 @@
 "use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { TypewriterEffect } from "./ui/TextGenerateEffect";
 import { Button } from "./ui/button";
+
+const words = [
+  {
+    text: "Build",
+  },
+  {
+    text: "awesome",
+  },
+  {
+    text: "apps",
+  },
+  {
+    text: "with",
+  },
+  {
+    text: "Aceternity.",
+    className: "text-purple dark:text-purple",
+  },
+];
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-20">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -19,30 +38,39 @@ const Hero = () => {
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vh]" fill="purple" />
       </div>
 
-      <div className="h-screen w-full bg-black-100 bg-grid-white/[0.03] flex items-center justify-center absolute top-0 left-0">
-        {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      </div>
-
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[70vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <div className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-full">
-            <h2>Explore Study Sources with..</h2>
-            <TextGenerateEffect
-              className="text-center text-[40px] md:text-5xl ld:text-6xl"
-              words="VStudy - The Study Explorer"
-            />
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              By the group of StudyStack!
-            </p>
-            <a href="#about" title="Know About Us">
-              <Button>StudyStack</Button>
-            </a>
-          </div>
+      <div className="flex flex-col items-center justify-center h-[40rem]  ">
+        <TypewriterEffect
+          words={words}
+          className="text-4xl sm:text-lg md:text-2xl lg:text-3xl xl:text-5xl"
+        />
+        <p className="text-neutral-600 dark:text-neutral-200 pt-20 text-base lg:text-lg sm:text-sm  xl:text-xl">
+          The road to freedom starts from here
+        </p>
+        <div className="flex flex-col md:flex-row pt-20 space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+          <a
+            href="#"
+            className="inline-flex items-center justify-center z-10 gap-2 text-white border border-white/15 px-6 h-12 rounded-xl"
+          >
+            <span className="font-semibold">Check Resume</span>
+            {/* <ArrowUpRight className="size-4" /> */}
+          </a>
+          <a
+            href="mailto:victus0307@gmail.com?subject=Hello%20I'm%20____%20from%20____%20company&body=I%20want%20to%20start%20a%20new%20project%20about%20____%20and%20time%20duration%20is%20___%20days."
+            className="inline-flex items-center z-10 gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+          >
+            <span>👋</span>
+            <span className="font-semibold">Let&apos;s Connect</span>
+          </a>
         </div>
       </div>
     </div>
   );
 };
+
+{
+  /* <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+
+        </div> */
+}
 
 export default Hero;

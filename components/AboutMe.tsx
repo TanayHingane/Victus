@@ -99,7 +99,9 @@ export const AboutMe = () => {
                 title="My Reads"
                 description="Explore the books that have shaped my perspective."
               />
-              <CardStack items={CARDS} />
+              <div className="mx-12">
+                <CardStack items={CARDS} />
+              </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader

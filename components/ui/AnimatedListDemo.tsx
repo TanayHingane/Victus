@@ -49,7 +49,7 @@ const Notification = ({ name, description, icon, color }: Item) => {
         // animation styles
         "transition-all duration-200 ease-in-out hover:scale-[103%]",
         // light styles
-        "bg-transparent border border-white/10",
+        "bg-transparent border border-white/20",
         // dark styles
         "transform-gpu dark:bg-transparent dark:backdrop-blur-md "
       )}
@@ -64,13 +64,11 @@ const Notification = ({ name, description, icon, color }: Item) => {
           <span className="text-lg">{icon}</span>
         </div>
         <div className="flex flex-col overflow-hidden">
-          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
+          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium text-white ">
             <span className="text-sm sm:text-lg">{name}</span>
             <span className="mx-1">·</span>
           </figcaption>
-          <p className="text-sm font-normal dark:text-white/60">
-            {description}
-          </p>
+          <p className="text-sm font-normal text-white/60">{description}</p>
         </div>
       </div>
     </figure>

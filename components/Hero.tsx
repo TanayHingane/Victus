@@ -9,16 +9,20 @@ const words = [
     text: "Build",
   },
   {
-    text: "awesome",
+    text: "Awesome",
   },
   {
-    text: "apps",
+    text: "Websites",
   },
   {
     text: "with",
   },
   {
-    text: "Aceternity.",
+    text: "Tanay",
+    className: "text-purple dark:text-purple",
+  },
+  {
+    text: "Hingane.",
     className: "text-purple dark:text-purple",
   },
 ];
@@ -43,8 +47,11 @@ const Hero = () => {
           words={words}
           className="text-4xl sm:text-lg md:text-2xl lg:text-3xl xl:text-5xl"
         />
-        <p className="text-neutral-600 dark:text-neutral-200 pt-20 text-base lg:text-lg sm:text-sm  xl:text-xl">
-          The road to freedom starts from here
+        <p className="text-neutral-400 dark:text-neutral-200 pt-20 text-center text-base lg:text-lg sm:text-sm  xl:text-xl">
+          I specialize in transforming designs into functional and
+          high-performing web applications.
+          <br />
+          Let&apos;s discuss your next project.
         </p>
         <div className="flex flex-col md:flex-row pt-20 space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <a

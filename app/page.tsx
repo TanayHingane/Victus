@@ -1,7 +1,10 @@
 "use client";
 
+import { AboutMe } from "@/components/AboutMe";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import ProjectGrid from "@/components/ui/ProjectGrid";
+import SectionHeader from "@/components/ui/SectionHead";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
           ]}
         />
         <Hero />
+        <SectionHeader title="Projects" description="See my work" />
+        <ProjectGrid />
+        <AboutMe />
       </div>
     </main>
   );

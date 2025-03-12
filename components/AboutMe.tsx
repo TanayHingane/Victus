@@ -26,6 +26,7 @@ import { text } from "stream/consumers";
 import { title } from "process";
 import { CARDS } from "./ui/GoodThoughts";
 import { CardStack } from "./ui/card-stack";
+import { MarqueeDemo } from "./Lang";
 // import { Text } from "lucide-react";
 
 // const toolbox = [
@@ -99,7 +100,7 @@ export const AboutMe = () => {
                 title="My Reads"
                 description="Explore the books that have shaped my perspective."
               />
-              <div className="mx-12">
+              <div className="mx-12 mb-4">
                 <CardStack items={CARDS} />
               </div>
             </Card>
@@ -109,16 +110,9 @@ export const AboutMe = () => {
                 description="Explore the technologies I use to build exceptional digital experiences."
                 className=""
               />
-              {/* <ToolBoxItems
-                toolbox={toolbox}
-                className=""
-                itemWrapperClassName="animate-moveLeft pr-8 [animation-duration:50s] hover:[animation-play-state:paused]"
-              />
-              <ToolBoxItems
-                toolbox={toolbox}
-                className="mt-6"
-                itemWrapperClassName="animate-moveRight pr-8 [animation-duration:30s] hover:[animation-play-state:paused]"
-              /> */}
+              <div className="-mt-3">
+                <MarqueeDemo />
+              </div>
             </Card>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">

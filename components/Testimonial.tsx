@@ -60,7 +60,7 @@ const ReviewCard = ({
     <>
       <figure
         className={cn(
-          "relative h-full w-96 cursor-pointer overflow-hidden rounded-xl border p-4",
+          "relative h-full lg:w-96 cursor-pointer overflow-hidden rounded-xl border p-4 w-80",
           // light styles
           "dark:border-gray-950/[.1] dark:bg-gray-950/[.01] dark:hover:bg-gray-950/[.05]",
           // dark styles
@@ -76,13 +76,17 @@ const ReviewCard = ({
             src={img}
           />
           <div className="flex flex-col">
-            <figcaption className="text-2xl font-medium text-white">
+            <figcaption className="lg:text-2xl font-medium text-white text-lg md:text-lg">
               {name}
             </figcaption>
-            <p className="text-lg font-medium text-white/40">{username}</p>
+            <p className="lg:text-lg font-medium text-white/40 text-sm md:text-sm">
+              {username}
+            </p>
           </div>
         </div>
-        <blockquote className="mt-2 text-xl text-white">{body}</blockquote>
+        <blockquote className="mt-2 lg:text-xl text-white text-base md:text-base">
+          {body}
+        </blockquote>
       </figure>
     </>
   );
@@ -90,7 +94,7 @@ const ReviewCard = ({
 
 export function Testimonial() {
   return (
-    <>
+    <div id="Review">
       <SectionHeader
         title="Work Review"
         description="See what people say about me"
@@ -102,6 +106,6 @@ export function Testimonial() {
           ))}
         </Marquee>
       </div>
-    </>
+    </div>
   );
 }

@@ -13,13 +13,14 @@ import { CardStack } from "./ui/card-stack";
 import { MarqueeDemo } from "./ui/Lang";
 import { Globe } from "./magicui/globe";
 import { ScratchToReveal } from "./magicui/scratch-to-reveal";
+import { Fullscreen } from "lucide-react";
 
 // import { Text } from "lucide-react";
 
 export const AboutMe = () => {
   const constraintsRef = useRef(null);
   return (
-    <div className="pb-20 lg:pb-28" id="about">
+    <div className="pb-20 lg:pb-28" id="About">
       <div className="container">
         <SectionHeader
           title="About Me"
@@ -32,7 +33,7 @@ export const AboutMe = () => {
                 title="My Reads"
                 description="Explore the books that have shaped my perspective."
               />
-              <div className="mx-12 mb-4">
+              <div className="flex items-center justify-center mb-4 -mx-2">
                 <CardStack items={CARDS} />
               </div>
             </Card>
@@ -56,7 +57,7 @@ export const AboutMe = () => {
               />
               <AnimatedListDemo />
             </Card>
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
+            <Card className="h-[320px] md:col-span-2 lg:col-span-1 flex items-center justify-center">
               {/* <CardHeader
                 title="Active Now"
                 description="Explore the books that have shaped my perspective."
@@ -64,8 +65,8 @@ export const AboutMe = () => {
               <ScratchToReveal
                 width={384}
                 height={320}
-                minScratchPercentage={30}
-                className=" flex items-center justify-center overflow-hidden "
+                minScratchPercentage={40}
+                className="flex items-center justify-center overflow-hidden "
                 gradientColors={["#A97CF8", "#F38CB8", "#FDCC92"]}
               >
                 <TanayIcon />
@@ -86,7 +87,7 @@ export const AboutMe = () => {
 export function TanayIcon() {
   return (
     <>
-      <img className="w-full h-320 object-cover" src="/map.png" />
+      <img className="w-full h-full object-fit" src="/map.png" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full flex items-center justify-center after:content-[''] after:absolute after:inset-0 after:rounded-full after:outline after:outline-2 after:outline-offset-1 after:outline-gray-950/20">
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-400 to-purple -z-20 animate-ping [animation-duration:2s]"></div>
         <div className="absolute inset-0 rounded-full bg-purple -z-10"></div>

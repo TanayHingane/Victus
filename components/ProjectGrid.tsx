@@ -5,7 +5,7 @@ import { Project1, Project2, Project3 } from "./ui/ProjectDrawer";
 
 const ProjectGrid = () => {
   return (
-    <div className="h-full flex justify-center items-center ">
+    <div className="h-full flex justify-center items-center" id="Projects">
       <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-4 p-5 h-4/5 lg:h-fit md:h-fit my-14 ">
         <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
           <div className="flex">

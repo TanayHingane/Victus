@@ -1,13 +1,14 @@
 import React from "react";
-import { Button } from "./button";
-import { Badge } from "./badge";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
+import { Project1, Project2, Project3 } from "./ui/ProjectDrawer";
 
 const ProjectGrid = () => {
   return (
-    <div className="h-screen flex justify-center items-center -mt-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5 h-2/3 my-5">
+    <div className="h-full flex justify-center items-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-4 p-5 h-4/5 lg:h-fit md:h-fit my-14 ">
         <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
-          <div className="relative">
+          <div className="flex">
             <img
               className="w-full h-48 object-cover"
               src="/dark-saas-landing-page.png"
@@ -21,7 +22,7 @@ const ProjectGrid = () => {
               aliquam quam massa id lacus.
             </p>
             <div className="flex gap-2 my-5">
-              <Button children="Know More" />
+              <Project1 />
               <Button children="Visit" />
             </div>
           </div>
@@ -42,7 +43,7 @@ const ProjectGrid = () => {
               aliquam quam massa id lacus.
             </p>
             <div className="flex gap-2 my-5">
-              <Button children="Know More" />
+              <Project2 />
               <Button children="Visit" />
             </div>
           </div>
@@ -63,7 +64,7 @@ const ProjectGrid = () => {
               aliquam quam massa id lacus.
             </p>
             <div className="flex gap-2 my-5">
-              <Button children="Know More" />
+              <Project3 />
               <Button children="Visit" />
             </div>
           </div>

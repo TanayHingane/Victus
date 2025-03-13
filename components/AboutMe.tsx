@@ -10,8 +10,10 @@ import { text } from "stream/consumers";
 import { title } from "process";
 import { CARDS } from "./ui/GoodThoughts";
 import { CardStack } from "./ui/card-stack";
-import { MarqueeDemo } from "./Lang";
+import { MarqueeDemo } from "./ui/Lang";
 import { Globe } from "./magicui/globe";
+import { ScratchToReveal } from "./magicui/scratch-to-reveal";
+
 // import { Text } from "lucide-react";
 
 export const AboutMe = () => {
@@ -55,14 +57,19 @@ export const AboutMe = () => {
               <AnimatedListDemo />
             </Card>
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-              <CardHeader
+              {/* <CardHeader
                 title="Active Now"
                 description="Explore the books that have shaped my perspective."
-              />
-              <div className="relative flex size-72 max-w-lg items-center justify-center overflow-hidden rounded-lg bg-transparent mx-12 -mt-10 md:pb-60">
-                <Globe className=" " />
-                <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
-              </div>
+              /> */}
+              <ScratchToReveal
+                width={384}
+                height={320}
+                minScratchPercentage={30}
+                className=" flex items-center justify-center overflow-hidden "
+                gradientColors={["#A97CF8", "#F38CB8", "#FDCC92"]}
+              >
+                <TanayIcon />
+              </ScratchToReveal>
             </Card>
           </div>
         </div>
@@ -70,3 +77,24 @@ export const AboutMe = () => {
     </div>
   );
 };
+
+//<img class="wxVZT" src="https://images.bitmoji.com/3d/avatar/30356572-99689645722_35-s5-v1.webp?ua=2">
+//<img role="presentation" class="Dozhe" src="https://cf-st.sc-cdn.net/3d/render/37401951-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2" srcset="https://cf-st.sc-cdn.net/3d/render/37401951-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2 1x, https://cf-st.sc-cdn.net/3d/render/37401951-99689645722_35-s5-v1.webp?trim=circle&amp;scale=1&amp;ua=2 2x">
+//<img src="https://cf-st.sc-cdn.net/3d/render/31151407-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2" srcset="https://cf-st.sc-cdn.net/3d/render/31151407-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2 1x, https://cf-st.sc-cdn.net/3d/render/31151407-99689645722_35-s5-v1.webp?trim=circle&amp;scale=1&amp;ua=2 2x"></img>
+//<img role="presentation" class="Dozhe" src="https://cf-st.sc-cdn.net/3d/render/34726058-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2" srcset="https://cf-st.sc-cdn.net/3d/render/34726058-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2 1x, https://cf-st.sc-cdn.net/3d/render/34726058-99689645722_35-s5-v1.webp?trim=circle&amp;scale=1&amp;ua=2 2x">
+
+export function TanayIcon() {
+  return (
+    <>
+      <img className="w-full h-320 object-cover" src="/map.png" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full flex items-center justify-center after:content-[''] after:absolute after:inset-0 after:rounded-full after:outline after:outline-2 after:outline-offset-1 after:outline-gray-950/20">
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-400 to-purple -z-20 animate-ping [animation-duration:2s]"></div>
+        <div className="absolute inset-0 rounded-full bg-purple -z-10"></div>
+        <img
+          className="size-16 rounded-full"
+          src="https://cf-st.sc-cdn.net/3d/render/34726058-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2"
+        />
+      </div>
+    </>
+  );
+}

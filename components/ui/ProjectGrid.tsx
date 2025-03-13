@@ -4,8 +4,8 @@ import { Badge } from "./badge";
 
 const ProjectGrid = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5 h-3/4 my-5">
+    <div className="h-screen flex justify-center items-center -mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5 h-2/3 my-5">
         <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
           <div className="relative">
             <img
@@ -20,19 +20,7 @@ const ProjectGrid = () => {
               auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non
               aliquam quam massa id lacus.
             </p>
-            <div className="flex gap-2 mb-5">
-              <Badge
-                variant="destructive"
-                children="Know More"
-                className="h-9 px-4 py-2"
-              />
-              <Badge
-                variant="destructive"
-                children="Visit"
-                className="h-9 px-4 py-2"
-              />
-            </div>
-            <div className="flex gap-2 mb-1">
+            <div className="flex gap-2 my-5">
               <Button children="Know More" />
               <Button children="Visit" />
             </div>
@@ -53,19 +41,7 @@ const ProjectGrid = () => {
               auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non
               aliquam quam massa id lacus.
             </p>
-            <div className="flex gap-2 mb-5">
-              <Badge
-                variant="destructive"
-                children="Know More"
-                className="h-9 px-4 py-2"
-              />
-              <Badge
-                variant="destructive"
-                children="Visit"
-                className="h-9 px-4 py-2"
-              />
-            </div>
-            <div className="flex gap-2 mb-1">
+            <div className="flex gap-2 my-5">
               <Button children="Know More" />
               <Button children="Visit" />
             </div>
@@ -86,19 +62,7 @@ const ProjectGrid = () => {
               auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non
               aliquam quam massa id lacus.
             </p>
-            <div className="flex gap-2 mb-5">
-              <Badge
-                variant="destructive"
-                children="Know More"
-                className="h-9 px-4 py-2"
-              />
-              <Badge
-                variant="destructive"
-                children="Visit"
-                className="h-9 px-4 py-2"
-              />
-            </div>
-            <div className="flex gap-2 mb-1">
+            <div className="flex gap-2 my-5">
               <Button children="Know More" />
               <Button children="Visit" />
             </div>

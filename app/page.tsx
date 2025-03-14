@@ -7,6 +7,7 @@ import ProjectGrid from "@/components/ProjectGrid";
 import SectionHeader from "@/components/ui/SectionHead";
 import { Testimonial } from "@/components/Testimonial";
 import { ContactSection } from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <AboutMe />
         <Testimonial />
         <ContactSection />
+        <Footer />
       </div>
     </main>
   );

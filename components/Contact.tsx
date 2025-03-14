@@ -7,7 +7,7 @@ export const ContactSection = () => {
       <div className="w-96 lg:container xl:container mx-auto">
         <div className="bg-purple px-7 text-gray-900 py-8 rounded-3xl text-center md:text-left relative overflow-hidden z-50 xl:px-16">
           <div className="absolute inset-0 opacity-5 -z-10"></div>
-          <div className="flex flex-col gap-8 md:gap-16 items-center md:flex-col sm:flex-row">
+          <div className="flex flex-col gap-8 md:gap-16 items-center md:flex-col xl:flex-row lg:flex-row">
             <div>
               <h2 className="text-2xl font-serif md:text-3xl sm:text-lg">
                 Let&apos;s create something amazing together

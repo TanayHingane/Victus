@@ -3,17 +3,12 @@
 import Card from "@/components/ui/Card";
 import SectionHeader from "@/components/ui/SectionHead";
 import { CardHeader } from "@/components/ui/CardHeader";
-import { motion } from "framer-motion";
 import { useRef } from "react";
 import { AnimatedListDemo } from "./ui/AnimatedListDemo";
-import { text } from "stream/consumers";
-import { title } from "process";
 import { CARDS } from "./ui/GoodThoughts";
 import { CardStack } from "./ui/card-stack";
 import { MarqueeDemo } from "./ui/Lang";
-import { Globe } from "./magicui/globe";
 import { ScratchToReveal } from "./magicui/scratch-to-reveal";
-import { Fullscreen } from "lucide-react";
 
 // import { Text } from "lucide-react";
 
@@ -58,10 +53,6 @@ export const AboutMe = () => {
               <AnimatedListDemo />
             </Card>
             <Card className="h-[320px] md:col-span-2 lg:col-span-1 flex items-center justify-center">
-              {/* <CardHeader
-                title="Active Now"
-                description="Explore the books that have shaped my perspective."
-              /> */}
               <ScratchToReveal
                 width={384}
                 height={320}

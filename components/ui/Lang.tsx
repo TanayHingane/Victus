@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Marquee } from "../magicui/marquee";
+import { Marquee1 } from "../magicui/marquee";
 
 const reviews = [
   {
@@ -74,10 +74,8 @@ const ReviewCard = ({ img, name }: { img: string; name: string }) => {
         <img className="rounded-sm" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col justify-center">
           <p className="text-base font-medium text-white">{name}</p>
-          {/* <p className="text-xs font-medium dark:text-white/40">{username}</p> */}
         </div>
       </div>
-      {/* <blockquote className="mt-2 text-sm">{body}</blockquote> */}
     </figure>
   );
 };
@@ -85,18 +83,16 @@ const ReviewCard = ({ img, name }: { img: string; name: string }) => {
 export function MarqueeDemo() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover className="[--duration:20s]">
+      <Marquee1 pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.name} {...review} />
         ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:20s]">
+      </Marquee1>
+      <Marquee1 reverse pauseOnHover className="[--duration:20s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.name} {...review} />
         ))}
-      </Marquee>
-      {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div> */}
+      </Marquee1>
     </div>
   );
 }

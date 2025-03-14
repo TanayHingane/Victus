@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import ProjectGrid from "@/components/ProjectGrid";
 import SectionHeader from "@/components/ui/SectionHead";
-import { ScrollText } from "@/components/ScrollText";
 import { Testimonial } from "@/components/Testimonial";
 
 export default function Home() {
@@ -24,7 +23,6 @@ export default function Home() {
         <SectionHeader title="Projects" description="See my work" />
         <ProjectGrid />
         <AboutMe />
-        {/* <ScrollText /> */}
         <Testimonial />
       </div>
     </main>

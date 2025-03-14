@@ -2,7 +2,6 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TypewriterEffect } from "./ui/TextGenerateEffect";
-import { Button } from "./ui/button";
 
 const words = [
   {
@@ -59,7 +58,6 @@ const Hero = () => {
             className="inline-flex items-center justify-center z-10 gap-2 text-white border border-white/15 px-6 h-12 rounded-xl"
           >
             <span className="font-semibold">Check Resume</span>
-            {/* <ArrowUpRight className="size-4" /> */}
           </a>
           <a
             href="mailto:victus0307@gmail.com?subject=Hello%20I'm%20____%20from%20____%20company&body=I%20want%20to%20start%20a%20new%20project%20about%20____%20and%20time%20duration%20is%20___%20days."
@@ -73,11 +71,5 @@ const Hero = () => {
     </div>
   );
 };
-
-{
-  /* <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-
-        </div> */
-}
 
 export default Hero;

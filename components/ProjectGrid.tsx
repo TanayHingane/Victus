@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
 import { Project1, Project2, Project3 } from "./ui/ProjectDrawer";
 
 const ProjectGrid = () => {

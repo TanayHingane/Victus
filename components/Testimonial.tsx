@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Marquee } from "@/components/magicui/marquee";
-import { CardHeader } from "./ui/CardHeader";
+import { Marquee } from "@/components/magicui/marque";
 import SectionHeader from "./ui/SectionHead";
 
 const reviews = [

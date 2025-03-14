@@ -1,5 +1,4 @@
 "use client";
-import { CardStack } from "../ui/card-stack";
 import { cn } from "@/lib/utils";
 
 // Small utility to highlight the content of specific section of a testimonial content

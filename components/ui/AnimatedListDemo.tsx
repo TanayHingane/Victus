@@ -26,9 +26,28 @@ let notifications = [
   },
   {
     name: "Music",
-    description: "Listening Music is the most relaxing for me",
+    description: "Listening Music is addiction",
     icon: "🎧",
     color: "#FF3D71",
+  },
+  {
+    name: "Travel",
+    description: "Traveling is fun",
+
+    icon: "🚗",
+    color: "#00C9A7",
+  },
+  {
+    name: "Cricket",
+    description: "Right-armed spin bowler",
+    icon: "🏏",
+    color: "#FF3D71",
+  },
+  {
+    name: "Hiking",
+    description: "Hiking is fun",
+    icon: "🥾",
+    color: "#00C9A7",
   },
   {
     name: "Chess",

@@ -8,17 +8,15 @@ const ProjectGrid = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-4 p-5 h-4/5 lg:h-fit md:h-fit my-14 ">
         <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
           <div className="flex">
-            <img
-              className="w-full h-48 object-cover"
-              src="/dark-saas-landing-page.png"
-            />
+            <img className="w-full h-48 object-cover" src="/pfss.png" />
           </div>
           <div className="p-4">
-            <div className="text-xl font-medium text-gray-800 my-3">Title</div>
+            <div className="text-xl font-medium text-gray-800 my-3">
+              Sample Portfolio
+            </div>
             <p className="text-gray-500 text-lg mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non
-              aliquam quam massa id lacus.
+              This is a personal portfolio website showcasing expertise in web
+              development and user experience design.
             </p>
             <div className="flex gap-2 my-5">
               <Project1 />
@@ -29,17 +27,15 @@ const ProjectGrid = () => {
 
         <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
           <div className="relative">
-            <img
-              className="w-full h-48 object-cover"
-              src="/dark-saas-landing-page.png"
-            />
+            <img className="w-full h-48 object-cover" src="/snakess.png" />
           </div>
           <div className="p-4">
-            <div className="text-xl font-medium text-gray-800 my-3">Title</div>
+            <div className="text-xl font-medium text-gray-800 my-3">
+              Snake Game
+            </div>
             <p className="text-gray-500 text-lg mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non
-              aliquam quam massa id lacus.
+              This website features a classic Snake game with a modern UI.
+              Remember the snake game from your childhood? This is it!
             </p>
             <div className="flex gap-2 my-5">
               <Project2 />
@@ -51,16 +47,18 @@ const ProjectGrid = () => {
         <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
           <div className="relative">
             <img
-              className="w-full h-48 object-cover"
-              src="/dark-saas-landing-page.png"
+              className="w-full h-48 object-cover md:object-fill lg:object-fill xl:object-fill"
+              src="/2048sss.png"
             />
           </div>
           <div className="p-4">
-            <div className="text-xl font-medium text-gray-800 my-3">Title</div>
+            <div className="text-xl font-medium text-gray-800 my-3">
+              2048 Game
+            </div>
             <p className="text-gray-500 text-lg mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non
-              aliquam quam massa id lacus.
+              It is an an online version of the popular 2048 game, featuring a
+              theme control interface with a score tracker and high score
+              display.
             </p>
             <div className="flex gap-2 my-5">
               <Project3 />

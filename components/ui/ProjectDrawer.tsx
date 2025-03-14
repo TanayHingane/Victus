@@ -1,6 +1,4 @@
 import * as React from "react";
-
-import { useMediaQuery } from "@/hooks/use-media-query";
 import { Button } from "./button";
 import {
   Dialog,
@@ -39,21 +37,22 @@ export function Project1() {
             <DialogHeader>
               <img
                 className="w-full h-36 object-contain p-2 pb-4"
-                src="/dark-saas-landing-page.png"
+                src="/pfss.png"
               />
-              <DialogTitle>Project Title</DialogTitle>
+              <DialogTitle>Personal Portfolio</DialogTitle>
               <DialogDescription>Project Duration(date)</DialogDescription>
               <DialogDescription>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                delectus eos doloribus tempore. Veritatis doloremque soluta
-                distinctio ad laudantium. Facilis neque illum voluptatem atque,
-                natus possimus in incidunt non. Iure? Culpa harum vero beatae
-                adipisci dolorum eius quidem odio blanditiis reprehenderit enim,
-                ipsum laborum itaque ipsa unde cum quam vitae debitis, officiis
-                iusto sed quos! Facilis magnam sapiente ea labore.
+                This is a personal portfolio website showcasing expertise in web
+                development and user experience design. With a sleek and modern
+                UI, the site highlights skills in transforming designs into
+                functional and high-performing web applications. Visitors can
+                explore the resume, connect for collaborations, and learn more
+                about past projects. The site is structured with an
+                easy-to-navigate layout, featuring sections like Home, About,
+                and Contact for seamless user interaction. 🚀💻
               </DialogDescription>
             </DialogHeader>
-            <div className="flex gap-5">
+            <div className="flex gap-5 py-4">
               <Badge
                 variant={"destructive"}
                 children="Next.js"
@@ -66,7 +65,7 @@ export function Project1() {
               />
               <Badge
                 variant={"destructive"}
-                children="Node.js"
+                children="Tailwind CSS"
                 className="h-9 w-fit px-4 py-2"
               />
             </div>
@@ -84,7 +83,14 @@ export function Project1() {
                 </label>
               </div>
             </div>
-            <Button variant={"outline"} children="View Repository" />
+            <Button
+              variant={"outline"}
+              children="View Repository"
+              className="mt-4 w-full pointer-events-auto"
+              onClick={() =>
+                window.open("https://github.com/TanayHingane/Victus03")
+              }
+            />
           </DialogContent>
         </Dialog>
       </div>
@@ -95,16 +101,17 @@ export function Project1() {
           </DrawerTrigger>
           <DrawerContent className="md:hidden block">
             <DrawerHeader className="text-left">
-              <DrawerTitle>Project Title</DrawerTitle>
-              <DrawerTitle>Project duration (date)</DrawerTitle>
+              <DrawerTitle>Personal Portfolio</DrawerTitle>
+              <DrawerTitle>2024</DrawerTitle>
               <DrawerDescription className="py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                delectus eos doloribus tempore. Veritatis doloremque soluta
-                distinctio ad laudantium. Facilis neque illum voluptatem atque,
-                natus possimus in incidunt non. Iure? Culpa harum vero beatae
-                adipisci dolorum eius quidem odio blanditiis reprehenderit enim,
-                ipsum laborum itaque ipsa unde cum quam vitae debitis, officiis
-                iusto sed quos! Facilis magnam sapiente ea labore.
+                This is a personal portfolio website showcasing expertise in web
+                development and user experience design. With a sleek and modern
+                UI, the site highlights skills in transforming designs into
+                functional and high-performing web applications. Visitors can
+                explore the resume, connect for collaborations, and learn more
+                about past projects. The site is structured with an
+                easy-to-navigate layout, featuring sections like Home, About,
+                and Contact for seamless user interaction. 🚀💻
               </DrawerDescription>
               <div className="flex gap-5 py-2">
                 <Badge
@@ -119,11 +126,11 @@ export function Project1() {
                 />
                 <Badge
                   variant={"destructive"}
-                  children="Node.js"
+                  children="Tailwind CSS"
                   className="h-9 w-fit px-4 py-2"
                 />
               </div>
-              <div className="flex border border-neutral-600 rounded-lg w-fit py-2">
+              <div className="flex border border-neutral-600 rounded-lg w-fit">
                 <div className="p-2 gap-2 flex">
                   <Avatar>
                     <AvatarImage
@@ -140,7 +147,13 @@ export function Project1() {
             </DrawerHeader>
             <DrawerFooter className="pt-2">
               <DrawerClose asChild>
-                <Button variant={"outline"} children="View Repository" />
+                <Button
+                  variant={"outline"}
+                  children="View Repository"
+                  onClick={() =>
+                    window.open("https://github.com/TanayHingane/Victus03")
+                  }
+                />
               </DrawerClose>
             </DrawerFooter>
           </DrawerContent>
@@ -159,40 +172,40 @@ export function Project2() {
       <div className="hidden md:block">
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button children="Know More" />
+            <Button children="Know More" className="hidden md:block" />
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px]">
+          <DialogContent className="sm:max-w-[425px] hidden md:block">
             <DialogHeader>
               <img
                 className="w-full h-36 object-contain p-2 pb-4"
-                src="/dark-saas-landing-page.png"
+                src="/snakess.png"
               />
-              <DialogTitle>Project Title</DialogTitle>
-              <DialogDescription>Project Duration(date)</DialogDescription>
+              <DialogTitle>Snake Game</DialogTitle>
+              <DialogDescription>2023-2024</DialogDescription>
               <DialogDescription>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                delectus eos doloribus tempore. Veritatis doloremque soluta
-                distinctio ad laudantium. Facilis neque illum voluptatem atque,
-                natus possimus in incidunt non. Iure? Culpa harum vero beatae
-                adipisci dolorum eius quidem odio blanditiis reprehenderit enim,
-                ipsum laborum itaque ipsa unde cum quam vitae debitis, officiis
-                iusto sed quos! Facilis magnam sapiente ea labore.
+                This website features a classic Snake game with a modern UI.
+                Players control a growing snake, navigating it to eat food while
+                avoiding collisions. The interface includes a score tracker and
+                high score display, allowing users to challenge themselves to
+                beat their best score. The game has a minimalistic design with a
+                dark-themed game board for a visually appealing experience.
+                Ideal for casual gaming and improving reflexes! 🎮🐍
               </DialogDescription>
             </DialogHeader>
-            <div className="flex gap-5">
+            <div className="flex gap-5 py-2">
               <Badge
                 variant={"destructive"}
-                children="Next.js"
+                children="HTML"
                 className="h-9 w-fit px-4 py-2"
               />
               <Badge
                 variant={"destructive"}
-                children="React.js"
+                children="CSS"
                 className="h-9 w-fit px-4 py-2"
               />
               <Badge
                 variant={"destructive"}
-                children="Node.js"
+                children="Javascript"
                 className="h-9 w-fit px-4 py-2"
               />
             </div>
@@ -210,42 +223,49 @@ export function Project2() {
                 </label>
               </div>
             </div>
-            <Button variant={"outline"} children="View Repository" />
+            <Button
+              variant={"outline"}
+              children="View Repository"
+              className="mt-4 w-full pointer-events-auto"
+              onClick={() =>
+                window.open("https://github.com/TanayHingane/snakegamevictus")
+              }
+            />
           </DialogContent>
         </Dialog>
       </div>
       <div className="md:hidden block">
         <Drawer open={open} onOpenChange={setOpen}>
           <DrawerTrigger asChild>
-            <Button children="Know More" />
+            <Button children="Know More" className="md:hidden block" />
           </DrawerTrigger>
-          <DrawerContent>
+          <DrawerContent className="md:hidden block">
             <DrawerHeader className="text-left">
-              <DrawerTitle>Project Title</DrawerTitle>
-              <DrawerTitle>Project duration (date)</DrawerTitle>
+              <DrawerTitle>Snake Game</DrawerTitle>
+              <DrawerTitle>2023-2024</DrawerTitle>
               <DrawerDescription className="py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                delectus eos doloribus tempore. Veritatis doloremque soluta
-                distinctio ad laudantium. Facilis neque illum voluptatem atque,
-                natus possimus in incidunt non. Iure? Culpa harum vero beatae
-                adipisci dolorum eius quidem odio blanditiis reprehenderit enim,
-                ipsum laborum itaque ipsa unde cum quam vitae debitis, officiis
-                iusto sed quos! Facilis magnam sapiente ea labore.
+                This website features a classic Snake game with a modern UI.
+                Players control a growing snake, navigating it to eat food while
+                avoiding collisions. The interface includes a score tracker and
+                high score display, allowing users to challenge themselves to
+                beat their best score. The game has a minimalistic design with a
+                dark-themed game board for a visually appealing experience.
+                Ideal for casual gaming and improving reflexes! 🎮🐍
               </DrawerDescription>
               <div className="flex gap-5 py-2">
                 <Badge
                   variant={"destructive"}
-                  children="Next.js"
+                  children="HTML"
                   className="h-9 w-fit px-4 py-2"
                 />
                 <Badge
                   variant={"destructive"}
-                  children="React.js"
+                  children="CSS"
                   className="h-9 w-fit px-4 py-2"
                 />
                 <Badge
                   variant={"destructive"}
-                  children="Node.js"
+                  children="Javascript"
                   className="h-9 w-fit px-4 py-2"
                 />
               </div>
@@ -266,7 +286,15 @@ export function Project2() {
             </DrawerHeader>
             <DrawerFooter className="pt-2">
               <DrawerClose asChild>
-                <Button variant={"outline"} children="View Repository" />
+                <Button
+                  variant={"outline"}
+                  children="View Repository"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/TanayHingane/snakegamevictus"
+                    )
+                  }
+                />
               </DrawerClose>
             </DrawerFooter>
           </DrawerContent>
@@ -285,40 +313,39 @@ export function Project3() {
       <div className="hidden md:block">
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <Button children="Know More" />
+            <Button children="Know More" className="hidden md:block" />
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px]">
+          <DialogContent className="sm:max-w-[425px] hidden md:block">
             <DialogHeader>
               <img
                 className="w-full h-36 object-contain p-2 pb-4"
-                src="/dark-saas-landing-page.png"
+                src="/2048sss.png"
               />
-              <DialogTitle>Project Title</DialogTitle>
-              <DialogDescription>Project Duration(date)</DialogDescription>
+              <DialogTitle>2048 Game</DialogTitle>
+              <DialogDescription>2023</DialogDescription>
               <DialogDescription>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                delectus eos doloribus tempore. Veritatis doloremque soluta
-                distinctio ad laudantium. Facilis neque illum voluptatem atque,
-                natus possimus in incidunt non. Iure? Culpa harum vero beatae
-                adipisci dolorum eius quidem odio blanditiis reprehenderit enim,
-                ipsum laborum itaque ipsa unde cum quam vitae debitis, officiis
-                iusto sed quos! Facilis magnam sapiente ea labore.
+                2048 Game is an online version of the popular 2048 game,
+                featuring a sleek dark-themed control interface with a score
+                tracker and high score display. It allows users to combine
+                numbered tiles strategically to reach the 2048 tile.
+                Additionally, the presence of a dark mode toggle enhances the
+                user experience.
               </DialogDescription>
             </DialogHeader>
-            <div className="flex gap-5">
+            <div className="flex gap-5 py-2">
               <Badge
                 variant={"destructive"}
-                children="Next.js"
+                children="HTML"
                 className="h-9 w-fit px-4 py-2"
               />
               <Badge
                 variant={"destructive"}
-                children="React.js"
+                children="CSS"
                 className="h-9 w-fit px-4 py-2"
               />
               <Badge
                 variant={"destructive"}
-                children="Node.js"
+                children="Javascript"
                 className="h-9 w-fit px-4 py-2"
               />
             </div>
@@ -331,47 +358,53 @@ export function Project3() {
                   />
                   <AvatarFallback>TH</AvatarFallback>
                 </Avatar>
-                <label className="text-base font-medium text-black ">
+                <label className="text-base font-medium text-black">
                   Tanay Hingane
                 </label>
               </div>
             </div>
-            <Button variant={"outline"} children="View Repository" />
+            <Button
+              variant={"outline"}
+              children="View Repository"
+              className="mt-4 w-full pointer-events-auto"
+              onClick={() =>
+                window.open("https://github.com/TanayHingane/2048gamev")
+              }
+            />
           </DialogContent>
         </Dialog>
       </div>
       <div className="md:hidden block">
         <Drawer open={open} onOpenChange={setOpen}>
           <DrawerTrigger asChild>
-            <Button children="Know More" />
+            <Button children="Know More" className="md:hidden block" />
           </DrawerTrigger>
-          <DrawerContent>
+          <DrawerContent className="md:hidden block">
             <DrawerHeader className="text-left">
-              <DrawerTitle>Project Title</DrawerTitle>
-              <DrawerTitle>Project duration (date)</DrawerTitle>
+              <DrawerTitle>2048 Game</DrawerTitle>
+              <DrawerTitle>2023</DrawerTitle>
               <DrawerDescription className="py-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                delectus eos doloribus tempore. Veritatis doloremque soluta
-                distinctio ad laudantium. Facilis neque illum voluptatem atque,
-                natus possimus in incidunt non. Iure? Culpa harum vero beatae
-                adipisci dolorum eius quidem odio blanditiis reprehenderit enim,
-                ipsum laborum itaque ipsa unde cum quam vitae debitis, officiis
-                iusto sed quos! Facilis magnam sapiente ea labore.
+                2048 Game is an online version of the popular 2048 game,
+                featuring a sleek dark-themed control interface with a score
+                tracker and high score display. It allows users to combine
+                numbered tiles strategically to reach the 2048 tile.
+                Additionally, the presence of a dark mode toggle enhances the
+                user experience.
               </DrawerDescription>
               <div className="flex gap-5 py-2">
                 <Badge
                   variant={"destructive"}
-                  children="Next.js"
+                  children="HTML"
                   className="h-9 w-fit px-4 py-2"
                 />
                 <Badge
                   variant={"destructive"}
-                  children="React.js"
+                  children="CSS"
                   className="h-9 w-fit px-4 py-2"
                 />
                 <Badge
                   variant={"destructive"}
-                  children="Node.js"
+                  children="Javascript"
                   className="h-9 w-fit px-4 py-2"
                 />
               </div>
@@ -392,7 +425,13 @@ export function Project3() {
             </DrawerHeader>
             <DrawerFooter className="pt-2">
               <DrawerClose asChild>
-                <Button variant={"outline"} children="View Repository" />
+                <Button
+                  variant={"outline"}
+                  children="View Repository"
+                  onClick={() =>
+                    window.open("https://github.com/TanayHingane/2048gamev")
+                  }
+                />
               </DrawerClose>
             </DrawerFooter>
           </DrawerContent>

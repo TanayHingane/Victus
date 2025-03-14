@@ -6,6 +6,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import ProjectGrid from "@/components/ProjectGrid";
 import SectionHeader from "@/components/ui/SectionHead";
 import { Testimonial } from "@/components/Testimonial";
+import { ContactSection } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <ProjectGrid />
         <AboutMe />
         <Testimonial />
+        <ContactSection />
       </div>
     </main>
   );

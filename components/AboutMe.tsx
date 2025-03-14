@@ -26,9 +26,9 @@ export const AboutMe = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
-                description="Explore the books that have shaped my perspective."
+                description="Explore thought that have shaped myself"
               />
-              <div className="flex items-center justify-center mb-4 -mx-2">
+              <div className="flex items-center justify-start mb-4 px-2 xl:justify-center md:justify-start lg:justify-center">
                 <CardStack items={CARDS} />
               </div>
             </Card>

@@ -40,12 +40,12 @@ export const CardStack = ({
   };
 
   return (
-    <div className="relative justify-center items-center h-40 w-60 md:h-40 md:w-64">
+    <div className="relative justify-center items-center h-40 w-60 md:h-28 md:w-44">
       {cards.map((card, index) => {
         return (
           <motion.div
             key={index}
-            className="absolute dark:bg-white bg-white  h-36 w-64 md:h-30 md:w-66 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-self-center"
+            className="absolute dark:bg-white bg-white  h-40 w-64 md:h-30 md:w-66 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-self-center"
             style={{
               transformOrigin: "top center",
             }}

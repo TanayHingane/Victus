@@ -28,7 +28,7 @@ const words = [
 
 const Hero = () => {
   return (
-    <div id="Home" className="pb-20 pt-20">
+    <div id="Home" className="pb-20 pt-20 sm:pt-28">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -46,13 +46,13 @@ const Hero = () => {
           words={words}
           className="text-4xl sm:text-lg md:text-2xl lg:text-3xl xl:text-5xl"
         />
-        <p className="text-neutral-400 dark:text-neutral-200 pt-20 text-center text-base lg:text-lg sm:text-sm  xl:text-xl">
+        <p className="text-neutral-400 dark:text-neutral-200 pt-20 sm:pt-10 text-center text-base lg:text-lg sm:text-sm  xl:text-xl">
           I specialize in transforming designs into functional and
           high-performing web applications.
           <br />
           Let&apos;s discuss your next project.
         </p>
-        <div className="flex flex-col md:flex-row pt-20 space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+        <div className="flex flex-col md:flex-row pt-20 space-y-4 md:space-y-0 space-x-0 md:space-x-4 sm:pt-16">
           <a
             href="#"
             className="inline-flex items-center justify-center z-10 gap-2 text-white border border-white/15 px-6 h-12 rounded-xl"

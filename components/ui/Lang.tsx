@@ -24,7 +24,7 @@ const reviews = [
   },
   {
     name: "Tailwind CSS",
-    img: "/skill/TailwindcSS.svg",
+    img: "/skill/TailwindCSS.svg",
   },
   {
     name: "Git+GitHub",

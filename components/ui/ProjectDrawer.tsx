@@ -40,7 +40,7 @@ export function Project1() {
                 src="/pfss.png"
               />
               <DialogTitle>Personal Portfolio</DialogTitle>
-              <DialogDescription>Project Duration(date)</DialogDescription>
+              <DialogDescription>2024</DialogDescription>
               <DialogDescription>
                 This is a personal portfolio website showcasing expertise in web
                 development and user experience design. With a sleek and modern

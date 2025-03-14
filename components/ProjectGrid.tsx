@@ -20,7 +20,12 @@ const ProjectGrid = () => {
             </p>
             <div className="flex gap-2 my-5">
               <Project1 />
-              <Button children="Visit" />
+              <Button
+                children="Visit"
+                onClick={() =>
+                  window.open("https://deadpooldeshpande.vercel.app/")
+                }
+              />
             </div>
           </div>
         </div>
@@ -39,7 +44,12 @@ const ProjectGrid = () => {
             </p>
             <div className="flex gap-2 my-5">
               <Project2 />
-              <Button children="Visit" />
+              <Button
+                children="Visit"
+                onClick={() =>
+                  window.open("https://snakegamevictus.pages.dev/")
+                }
+              />
             </div>
           </div>
         </div>
@@ -62,7 +72,10 @@ const ProjectGrid = () => {
             </p>
             <div className="flex gap-2 my-5">
               <Project3 />
-              <Button children="Visit" />
+              <Button
+                children="Visit"
+                onClick={() => window.open("https://2048gamev.pages.dev/")}
+              />
             </div>
           </div>
         </div>

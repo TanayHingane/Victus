@@ -38,9 +38,9 @@ const Footer = () => {
         </div>
         <div>
           <div className="font-normal text-sm dark:text-black/60 text-white/60 text-center">
-            {" "}
-            &copy; {new Date().getFullYear()} Tanay Hingane <br /> All rights
-            reserved.
+            Made with ❤️ by Tanay Hingane
+            <br />
+            &copy; {new Date().getFullYear()} Tanay Hingane reserved.
           </div>
         </div>
       </div>

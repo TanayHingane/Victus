@@ -14,7 +14,7 @@ export const ContactSection = () => {
                 discuss how I can help you achieve your goals.
               </p>
             </div>
-            <div className="flex flex-col gap-4 justify-center items-center">
+            <div className="flex flex-col gap-4 justify-center items-center sm:flex-row">
               <a
                 href="mailto:vedantbhorofficial@gmail.com?subject=Hello%20I'm%20____%20from%20____%20company&body=I%20want%20to%20start%20a%20new%20project%20about%20____%20and%20time%20duration%20is%20___%20days."
                 className="text-white bg-gray-900 border border-gray-900 px-6 h-12 rounded-xl inline-flex items-center gap-2 w-max z-50"

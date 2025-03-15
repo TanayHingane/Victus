@@ -12,12 +12,12 @@ const Footer = () => {
               Tanay Hingane
             </span>
           </div>
-          <div className="flex items-center gap-4 text-white">
+          <div className="flex  items-center gap-5 text-white">
             {footerIcons.map((item, _) => (
               <Link href={item.href} target="_blank" key={_}>
                 <h2 className="flex">
                   {item.name}
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -30,7 +30,7 @@ const Footer = () => {
                   >
                     <path d="M7 7h10v10" />
                     <path d="M7 17 17 7" />
-                  </svg>
+                  </svg> */}
                 </h2>
               </Link>
             ))}

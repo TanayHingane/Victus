@@ -16,7 +16,7 @@ export const AboutMe = () => {
   const constraintsRef = useRef(null);
   return (
     <div className="pb-20 lg:pb-28" id="About">
-      <div className="container">
+      <div className="container px-4">
         <SectionHeader
           title="About Me"
           description="Learn more about who I am, what I do, and what inspires me."
@@ -28,7 +28,7 @@ export const AboutMe = () => {
                 title="My Reads"
                 description="Explore thought that have shaped myself"
               />
-              <div className="flex items-center justify-start mb-1 mt-5  px-2 xl:justify-center md:justify-start lg:justify-start xl:-ml-20">
+              <div className="flex items-center justify-center mb-1 mt-12 xl:justify-center md:justify-center lg:justify-center xl:-ml-20">
                 <CardStack items={CARDS} />
               </div>
             </Card>
@@ -54,10 +54,10 @@ export const AboutMe = () => {
             </Card>
             <Card className="h-[320px] md:col-span-2 lg:col-span-1 flex items-center justify-center">
               <ScratchToReveal
-                width={384}
+                width={395}
                 height={320}
                 minScratchPercentage={40}
-                className="flex items-center justify-center overflow-hidden "
+                className="flex items-center justify-center overflow-hidden object-fit"
                 gradientColors={["#A97CF8", "#F38CB8", "#FDCC92"]}
               >
                 <TanayIcon />
@@ -78,12 +78,12 @@ export const AboutMe = () => {
 export function TanayIcon() {
   return (
     <>
-      <img className="w-full h-full object-fit" src="/map.png" />
+      <img className="w-full h-full object-cover" src="/map2.png" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full flex items-center justify-center after:content-[''] after:absolute after:inset-0 after:rounded-full after:outline after:outline-2 after:outline-offset-1 after:outline-gray-950/20">
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-400 to-purple -z-20 animate-ping [animation-duration:2s]"></div>
         <div className="absolute inset-0 rounded-full bg-purple -z-10"></div>
         <img
-          className="size-16 rounded-full"
+          className="size-16 rounded-full "
           src="https://cf-st.sc-cdn.net/3d/render/34726058-99689645722_35-s5-v1.webp?trim=circle&amp;scale=0&amp;ua=2"
         />
       </div>

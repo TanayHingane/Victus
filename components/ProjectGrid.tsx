@@ -54,7 +54,7 @@ const ProjectGrid = () => {
           </div>
         </div>
 
-        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 sm:hover:scale-50">
+        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <div className="relative">
             <img
               className="w-full h-48 object-cover md:object-fill lg:object-fill xl:object-fill"

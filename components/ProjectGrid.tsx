@@ -6,7 +6,7 @@ const ProjectGrid = () => {
   return (
     <div className="h-full flex justify-center items-center" id="Projects">
       <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-5 p-5 h-4/5 lg:h-fit md:h-fit my-14 ">
-        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
+        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <div className="flex">
             <img className="w-full h-48 object-cover" src="/pfss.png" />
           </div>
@@ -30,7 +30,7 @@ const ProjectGrid = () => {
           </div>
         </div>
 
-        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
+        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <div className="relative">
             <img className="w-full h-48 object-cover" src="/snakess.png" />
           </div>
@@ -54,7 +54,7 @@ const ProjectGrid = () => {
           </div>
         </div>
 
-        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden">
+        <div className="bg-neutral-100 rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 sm:hover:scale-50">
           <div className="relative">
             <img
               className="w-full h-48 object-cover md:object-fill lg:object-fill xl:object-fill"

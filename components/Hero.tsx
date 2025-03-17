@@ -40,8 +40,7 @@ const Hero = () => {
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vh]" fill="purple" />
       </div>
-
-      <div className="flex flex-col items-center justify-center h-[40rem]  sm:pt-20 md:pt-20">
+      <div className="flex flex-col items-center justify-center h-[40rem] px-5 sm:pt-20 md:pt-20">
         <TypewriterEffect
           words={words}
           className="text-4xl sm:text-lg md:text-2xl lg:text-3xl xl:text-5xl"

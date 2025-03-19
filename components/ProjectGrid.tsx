@@ -58,23 +58,22 @@ const ProjectGrid = () => {
           <div className="relative">
             <img
               className="w-full h-48 object-cover md:object-fill lg:object-fill xl:object-fill"
-              src="/2048sss.png"
+              src="/todo.png"
             />
           </div>
           <div className="p-4">
             <div className="text-xl font-medium text-gray-800 my-3">
-              2048 Game
+              A Simple Todo List
             </div>
             <p className="text-gray-500 text-lg mb-3">
-              It is an an online version of the popular 2048 game, featuring a
-              theme control interface with a score tracker and high score
-              display.
+              a beautifully designed to-do list . Users can effortlessly add,
+              filter, and delete tasks, ensuring better productivity.
             </p>
             <div className="flex gap-2 my-5">
               <Project3 />
               <Button
                 children="Visit"
-                onClick={() => window.open("https://2048gamev.pages.dev/")}
+                onClick={() => window.open("https://todovictus.pages.dev/")}
               />
             </div>
           </div>

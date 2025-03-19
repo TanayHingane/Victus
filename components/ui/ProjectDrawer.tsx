@@ -319,17 +319,20 @@ export function Project3() {
             <DialogHeader>
               <img
                 className="w-full h-36 object-contain p-2 pb-4"
-                src="/2048sss.png"
+                src="/todo.png"
               />
-              <DialogTitle>2048 Game</DialogTitle>
+              <DialogTitle>Simple To-Do list</DialogTitle>
               <DialogDescription>2023</DialogDescription>
               <DialogDescription>
-                2048 Game is an online version of the popular 2048 game,
-                featuring a sleek dark-themed control interface with a score
-                tracker and high score display. It allows users to combine
-                numbered tiles strategically to reach the 2048 tile.
-                Additionally, the presence of a dark mode toggle enhances the
-                user experience.
+                a beautifully designed to-do list application that combines
+                simplicity with elegance. Featuring a scenic mountain
+                background, it provides a distraction-free and user-friendly
+                interface for managing daily tasks. Users can effortlessly add,
+                filter, and delete tasks, ensuring better productivity. With its
+                minimalist design and intuitive controls, the app offers a
+                seamless experience for organizing tasks efficiently. Whether
+                tracking pending or completed tasks, this sleek and modern to-do
+                list enhances focus and workflow. 🚀
               </DialogDescription>
             </DialogHeader>
             <div className="flex gap-5 py-2">
@@ -368,7 +371,7 @@ export function Project3() {
               children="View Repository"
               className="mt-4 w-full pointer-events-auto"
               onClick={() =>
-                window.open("https://github.com/TanayHingane/2048gamev")
+                window.open("https://github.com/TanayHingane/SimpleToDo")
               }
             />
           </DialogContent>
@@ -381,15 +384,18 @@ export function Project3() {
           </DrawerTrigger>
           <DrawerContent className="md:hidden block">
             <DrawerHeader className="text-left">
-              <DrawerTitle>2048 Game</DrawerTitle>
+              <DrawerTitle>Simple To-Do list</DrawerTitle>
               <DrawerTitle>2023</DrawerTitle>
               <DrawerDescription className="py-2">
-                2048 Game is an online version of the popular 2048 game,
-                featuring a sleek dark-themed control interface with a score
-                tracker and high score display. It allows users to combine
-                numbered tiles strategically to reach the 2048 tile.
-                Additionally, the presence of a dark mode toggle enhances the
-                user experience.
+                a beautifully designed to-do list application that combines
+                simplicity with elegance. Featuring a scenic mountain
+                background, it provides a distraction-free and user-friendly
+                interface for managing daily tasks. Users can effortlessly add,
+                filter, and delete tasks, ensuring better productivity. With its
+                minimalist design and intuitive controls, the app offers a
+                seamless experience for organizing tasks efficiently. Whether
+                tracking pending or completed tasks, this sleek and modern to-do
+                list enhances focus and workflow. 🚀
               </DrawerDescription>
               <div className="flex gap-5 py-2">
                 <Badge
@@ -429,7 +435,7 @@ export function Project3() {
                   variant={"outline"}
                   children="View Repository"
                   onClick={() =>
-                    window.open("https://github.com/TanayHingane/2048gamev")
+                    window.open("https://github.com/TanayHingane/SimpleToDo")
                   }
                 />
               </DrawerClose>

@@ -9,13 +9,15 @@ import { CARDS } from "./ui/GoodThoughts";
 import { CardStack } from "./ui/card-stack";
 import { MarqueeDemo } from "./ui/Lang";
 import { ScratchToReveal } from "./magicui/scratch-to-reveal";
+import { Pointer } from "./magicui/pointer";
+import { PaintRoller } from "lucide-react";
 
 // import { Text } from "lucide-react";
 
 export const AboutMe = () => {
   const constraintsRef = useRef(null);
   return (
-    <div className="pb-20 lg:pb-28" id="About">
+    <div className="pb-20 lg:py-28" id="About">
       <div className="container px-4">
         <SectionHeader
           title="About Me"
@@ -60,6 +62,9 @@ export const AboutMe = () => {
                 className="flex items-center justify-center overflow-hidden object-fit"
                 gradientColors={["#A97CF8", "#F38CB8", "#FDCC92"]}
               >
+                <Pointer>
+                  <PaintRoller className="text-black fill-purple" />
+                </Pointer>
                 <TanayIcon />
               </ScratchToReveal>
             </Card>

@@ -2,6 +2,7 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TypewriterEffect } from "./ui/TextGenerateEffect";
+import { Email } from "./ui/email";
 
 const words = [
   {
@@ -58,13 +59,14 @@ const Hero = () => {
           >
             <span className="font-semibold">Check Resume</span>
           </a>
-          <a
-            href="mailto:victus0307@gmail.com?subject=Hello%20I'm%20____%20from%20____%20company&body=I%20want%20to%20start%20a%20new%20project%20about%20____%20and%20time%20duration%20is%20___%20days."
+          {/* <a
+            href="mailto:tanayhingane03@gmail.com?subject=Hello%20I'm%20____%20from%20____%20company&body=I%20want%20to%20start%20a%20new%20project%20about%20____%20and%20time%20duration%20is%20___%20days."
             className="inline-flex items-center z-10 gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
           >
             <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>
-          </a>
+          </a> */}
+          <Email />
         </div>
       </div>
     </div>

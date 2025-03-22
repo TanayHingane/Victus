@@ -93,7 +93,7 @@ const ReviewCard = ({
 
 export function Testimonial() {
   return (
-    <div id="Review">
+    <div id="Review" className="py-20">
       <SectionHeader
         title="Work Review"
         description="See what people say about me"

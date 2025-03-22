@@ -56,7 +56,7 @@ export function ScriptCopyBtn({
   }, [command, theme, codeLanguage, lightTheme, darkTheme]);
 
   const handleClick = () => {
-    const end = Date.now() + 3 * 1000; // 3 seconds
+    const end = Date.now() + 2 * 1000; // 3 seconds
     const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
 
     const frame = () => {

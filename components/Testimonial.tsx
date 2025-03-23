@@ -99,7 +99,7 @@ export function Testimonial() {
         description="See what people say about me"
       />
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden my-14">
-        <Marquee pauseOnHover className="[--duration:20s]">
+        <Marquee pauseOnHover className="[--duration:40s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}

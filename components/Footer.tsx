@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const Footer = () => {
   return (
     <div>
       <div className="flex flex-col justify-center items-center gap-16  pt-16 pb-10 border-t border-white/15">
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20 lg:gap-32 xl:gap-96 w-full mx-auto px-3">
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <a href="https://www.linkedin.com/in/tanayhingane">
+              <Avatar className="w-11 h-11 cursor-pointer">
+                <AvatarImage src="./tp.JPG" className="object-cover" />
+                <AvatarFallback>TH</AvatarFallback>
+              </Avatar>
+            </a>
             <span className="select-none pointer-events-none text-lg font-medium dark:text-neutral-900 text-neutral-50">
               Tanay Hingane
             </span>
